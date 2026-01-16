@@ -56,14 +56,21 @@ Run the executable. This will flood your folder with `.ppm` files.
 Use FFmpeg to combine the generated frames into an MP4 file.
 
 ```bash
-ffmpeg -framerate 30 -i frame%03d.ppm -c:v libx264 -pix_fmt yuv420p output.mp4
+ffmpeg -framerate 30 -i output-%03d.ppm -c:v libx264 -pix_fmt yuv420p output.mp4
+
+```
+
+or
+
+```bash
+ffmpeg -i output-%03d.ppm -r 60 output.mp4
 
 ```
 
 **Command Breakdown:**
 
 * `-framerate 30`: Sets the video to 30 frames per second.
-* `-i frame%03d.ppm`: Tells FFmpeg to look for files named `frame001.ppm`, `frame002.ppm`, etc.
+* `-i output-%03d.ppm`: Tells FFmpeg to look for files named `output-001.ppm`, `output-002.ppm`, etc.
 * `-c:v libx264`: Uses the H.264 codec (standard for MP4).
 * `-pix_fmt yuv420p`: Ensures compatibility with standard media players (like QuickTime/Windows Media Player).
 
