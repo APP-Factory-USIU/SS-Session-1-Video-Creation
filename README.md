@@ -1,4 +1,3 @@
-```markdown
 # 🎬 PPM Video Generator
 
 A recreational coding project exploring the simplicity of the **PPM (Portable Pixel Map)** image format.
@@ -109,5 +108,3 @@ It is incredibly inefficient (storing numbers as text characters), but incredibl
 ## 📄 License
 
 This project is for educational purposes. Feel free to modify and share!
-
-```
