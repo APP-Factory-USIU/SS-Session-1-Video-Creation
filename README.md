@@ -112,6 +112,9 @@ It is incredibly inefficient (storing numbers as text characters), but incredibl
 2. **Animation:** Make a circle move across the screen by changing its position based on the frame number.
 3. **Resolution:** Increase the width and height and see how it impacts generation time and file size.
 
+## YouTube link to Tsoding's video
+[![Watch the video](https://img.youtube.com/vi/xNX9H_ZkfNE/maxresdefault.jpg)](https://www.youtube.com/watch?v=xNX9H_ZkfNE)
+
 ## 📄 License
 
 This project is for educational purposes. Feel free to modify and share!
